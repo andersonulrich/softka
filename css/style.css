@@ -65,9 +65,11 @@ body{
     border-top-right-radius:150px ;
     background: rgb(255, 255, 255);
 }
+
 .container-secao0 h2{
     font-family: Bruno Ace SC Regular;
     border-bottom: solid rgb(229, 201, 148);
+    font-size: 25px;
     color: rgb(44, 44, 44);
     font-weight: bold;
     padding-bottom: 15px;
@@ -198,3 +200,256 @@ flex-wrap: wrap;
 .footer h3{
     text-align: center;
 }
+
+
+                   /************************************** RESPONSIVO **************************************/
+
+@media (max-width:739px){
+
+
+    body{
+        font-family: Bruno Ace SC Regular;
+        background: rgb(243, 241, 238);
+    }
+    .container-header{
+        display: flex;
+        margin: 0 auto;    
+        border-radius: 5px;
+        background: rgb(229, 201, 148);
+        justify-content: space-evenly;    
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    
+    }.container-nav{
+        display: flex;
+        
+        align-items: center;
+    
+    }
+    .menu-nav{
+     .container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #f16234;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+    
+    }
+    .menu-nav ul{	
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .menu-nav a{
+        text-decoration: none;
+        color: rgb(24, 24, 24);
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+    .menu-nav a:hover{
+        font-weight: bold;
+        
+    }
+    .container-secao0{
+        display: flex;
+        max-width: 739px;    
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 10px 50px 10px;
+        font-family: Georgia, serif;
+        border-top-left-radius:5px ;
+        border-top-right-radius:150px ;
+        background: rgb(255, 255, 255);
+    }
+    
+    .container-secao0 h2{        
+            font-family: Bruno Ace SC Regular;
+            border-bottom: solid rgb(229, 201, 148);
+            font-size: 1.125em;
+            color: rgb(44, 44, 44);
+            font-weight: bold;
+            padding-bottom: 15px;
+            text-align: center;   
+        }
+    .container-secao0 p{
+        max-width: 750px;
+        padding: 150px 10px 0 10px;
+        color: rgb(44, 44, 44);
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;    
+        font-size: 1.125em;
+    }
+    .container-secao1{
+        display: flex;
+        max-width: 960px;    
+        margin: 0px auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;    
+        padding-bottom: 150px;
+        font-family: Georgia, serif;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 5px;
+        background: rgb(255, 255, 255);
+    }
+    .container-itens-secao{
+        width: 300px;
+        height: 150px;
+        margin: 10px auto;
+        background: rgb(238, 221, 195);
+        border-radius: 10px;
+        
+        padding: 5px;    
+        text-align: center;
+    }
+    .container-itens-secao h3 {
+        padding-bottom: 20px;
+        font-family: Bruno Ace SC Regular;
+    }
+    .container-itens-secao p{
+        font-weight: bold;
+    }
+    .container-geral{
+        max-width: 960px;    
+        margin: 110px auto;
+        padding-top: 100px;
+        font-family: Georgia, serif;
+        border-top-right-radius: 150px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 5px;
+        background: rgb(255, 255, 255);   
+        
+    }
+    
+    .container-main0{
+        max-width: 960px;
+        margin: 0 auto;
+        
+        align-items: center;
+        display: flex;    
+        justify-content: space-around;    
+        flex-wrap: wrap; 
+          
+        
+    }
+    .container-main0 h2{
+        padding-top: 50px;
+        
+        padding-bottom: 50px;
+        border-bottom: solid rgb(229, 201, 148);
+        border-top: solid rgb(229, 201, 148);
+    }
+    .container-main1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .container-main1 img{
+        height: 120px;
+        padding-left: 100px;
+        padding-top: 20px;
+    }
+    .container-main2{
+    margin: 0 auto;
+    display: flex;    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+    .container-main2 img{
+        align-self: baseline;
+        height: 120px;
+    }
+    
+    .container-item{
+        max-width: 360px;
+        text-align: center;    
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        padding-bottom: 110px;
+    }
+    .container-item1{    
+        text-align: center;    
+        font-weight: bold;
+        font-size: 1.125em;
+        padding: 0px 80px 110px;
+    }
+    .container-item1 h2{
+        border-bottom: solid rgb(229, 201, 148);
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .footer{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 15px;
+        font-size: 12px;
+        border-radius: 5px;
+        background: rgb(229, 201, 148);
+        
+    }
+    .footer h3{
+        text-align: center;
+    }
+}
+
+                   /************************************** FIM RESPONSIVO **************************************/
