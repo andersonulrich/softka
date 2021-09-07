@@ -1,2 +1,2 @@
 # softka
-Código fonte do site portfólio da Softka
+Código fonte do site da Softka
