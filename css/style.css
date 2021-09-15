@@ -44,12 +44,16 @@ body{
     text-decoration: none;
     color: rgb(24, 24, 24);
     font-size: 15px;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
+    margin: 0;
     
 }
 .menu-nav a:hover{
     font-weight: bold;
     
+}
+.container-banner img{
+    width: -webkit-fill-available;
 }
 .container-secao0{
     display: flex;
@@ -152,15 +156,14 @@ body{
     justify-content: space-around;
 }
 .container-main1 img{
-    height: 120px;
-    padding-left: 100px;
+    height: 120px;    
     padding-top: 20px;
 }
 .container-main2{
 margin: 0 auto;
 display: flex;    
 justify-content: space-evenly;
-flex-wrap: wrap;
+flex-wrap: wrap-reverse;
 }
 .container-main2 img{
     align-self: baseline;
@@ -186,7 +189,15 @@ flex-wrap: wrap;
     padding-bottom: 20px;
     margin-bottom: 15px;
 }
-
+.social img{
+    
+    height: 35px;    
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 5px 5px 0px;
+}
 .footer{
     display: flex;
     margin: 0 auto;
@@ -206,7 +217,7 @@ flex-wrap: wrap;
 
                    /************************************** RESPONSIVO **************************************/
 
-@media (max-width:460px){
+@media (max-width:480px){
 
 
     body{
@@ -289,7 +300,12 @@ label span:nth-child(3){
     .menu-nav ul{	
         display: flex;
         list-style: none;
+        flex-direction: column;
+        padding-left: 27px;
         
+    }
+    .menu-nav li{
+        padding: 5px 0px 5px 0px;
     }
     .menu-nav a{
         text-decoration: none;
@@ -405,19 +421,18 @@ label span:nth-child(3){
         justify-content: space-around;
     }
     .container-main1 img{
-        height: 120px;
-        padding-left: 100px;
-        padding-top: 20px;
+        height: 80px;
+
     }
     .container-main2{
     margin: 0 auto;
     display: flex;    
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;    
+    flex-wrap: wrap-reverse;
     }
-    .container-main2 img{
-        align-self: baseline;
-        height: 120px;
+    .container-main2 img{        
+        height: 55px;        
+        width: 65px;
     }
     
     .container-item{
@@ -534,7 +549,7 @@ label span:nth-child(3){
     pointer-events: auto;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     transform: translateX(-100%);
-    transition: transform .3s;
+    transition: transform .6s;
     will-change: transform;
     contain: paint;
     border-bottom-right-radius: 10px;    
@@ -544,4 +559,12 @@ label span:nth-child(3){
     transform: none;
   }
 
-}                  /************************************** FIM RESPONSIVO **************************************/
+.social img{
+    height: 35px;    
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 5px 5px 0px;
+}
+}                  /************************************** FIM RESPONSIVO **************************************/ght
