@@ -29,6 +29,12 @@ body{
     align-items: center;
 
 }
+.container-nav a{
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    
+}
+
 .menu-nav{
     display: flex;
     
@@ -39,13 +45,16 @@ body{
 	display: flex;
 	list-style: none;
     flex-wrap: wrap;
+    padding: 0px 10px;
+    
 }
 .menu-nav a{
     text-decoration: none;
     color: rgb(24, 24, 24);
     font-size: 15px;
-    padding: 10px 10px 10px 0;
+    padding: 0px 30px 0px 0px;
     margin: 0;
+    
     
 }
 .menu-nav a:hover{
@@ -154,29 +163,33 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
 }
 .container-main1 img{
-    height: 120px;    
-    padding-top: 20px;
+    border-radius: 10px;    
+    
+    max-width: 400px;
 }
 .container-main2{
 margin: 0 auto;
 display: flex;    
 justify-content: space-evenly;
 flex-wrap: wrap-reverse;
+margin-bottom: 200px;
 }
 .container-main2 img{
     align-self: baseline;
-    height: 120px;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 .container-item{
     max-width: 360px;
     text-align: center;    
     font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    padding-bottom: 110px;
+    font-size: 20px; 
+    margin-bottom: 100px;
 }
 .container-item1{    
     text-align: center;    
@@ -190,13 +203,15 @@ flex-wrap: wrap-reverse;
     margin-bottom: 15px;
 }
 .social img{
-    
-    height: 35px;    
+    padding: 0px 10px 10px;
+    max-width: 60px;
+        
 }
+
 .social{
     display: flex;
-    justify-content: flex-end;
-    margin: 0px 5px 5px 0px;
+    justify-content: flex-end;    
+    align-items: center;
 }
 .footer{
     display: flex;
@@ -421,8 +436,8 @@ label span:nth-child(3){
         justify-content: space-around;
     }
     .container-main1 img{
-        height: 80px;
-
+    
+        width: 200px;
     }
     .container-main2{
     margin: 0 auto;
@@ -431,8 +446,7 @@ label span:nth-child(3){
     flex-wrap: wrap-reverse;
     }
     .container-main2 img{        
-        height: 55px;        
-        width: 65px;
+        width: 200px;
     }
     
     .container-item{
@@ -441,7 +455,7 @@ label span:nth-child(3){
         font-weight: bold;
         font-size: 20px;
         padding: 10px;
-        padding-bottom: 110px;
+        margin-bottom: 100px;
     }
     .container-item1{    
         text-align: center;    
